@@ -8,6 +8,8 @@ function nmota_child_enqueue_styles() {
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array('parent-style') );
     // Enqueue additional custom stylesheet
     wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/custom.css', array('parent-style', 'child-style') );
+    // Enqueue custom JavaScript file
+    wp_enqueue_script( 'custom-script', get_stylesheet_directory_uri() . '/js/custom-script.js', array( 'jquery' ), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'nmota_child_enqueue_styles' );
 
