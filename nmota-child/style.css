@@ -1,0 +1,39 @@
+/*
+Theme Name : nmota-child
+Template: _s-master
+Author: Julie André
+Description: _s-master child theme for nmota
+Version: 1.0.0
+*/
+
+.custom-logo {
+    cursor: pointer;
+    margin-left: 40%;
+}
+
+.site-title {
+    display: none;
+}
+
+.site-header {
+    margin-bottom: 3%;
+    margin-top: 3%;
+    margin-right: 10%;
+    margin-left: 10%;
+    align-items: center;
+    display: flex;
+}
+
+.main-navigation ul {
+    justify-content: right;
+   
+}
+
+.main-navigation a {
+    color:black;
+    margin-right: 15px;
+    padding-left: 40px;
+    display: inline-block;
+    text-decoration: none;
+}
+
