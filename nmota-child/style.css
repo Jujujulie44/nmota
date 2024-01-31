@@ -6,6 +6,16 @@ Description: _s-master child theme for nmota
 Version: 1.0.0
 */
 
+/*FONTS*/
+
+/*** font-family: 'Space Mono', monospace; ***/
+@font-face {
+    font-family: 'SpaceMono';
+    src: url('./fonts/SpaceMono-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /****** HEADER ******/ 
 
@@ -40,7 +50,7 @@ Version: 1.0.0
 
 /******* FOOTER ******/
 #menu-footer {
-    padding-top: 15px;
+    padding-top: 18px;
     text-transform: uppercase;
     list-style: none;
     align-items: center;

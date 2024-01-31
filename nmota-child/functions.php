@@ -13,16 +13,13 @@ add_action( 'wp_enqueue_scripts', 'nmota_child_enqueue_styles' );
 
 
 
-function nmota_register_menu() {
 
+// FOOTER 
+function nmota_register_menu() {
     register_nav_menu(
-        
       'nmota-footer',
       'footer-menu'
     );
-
   }
   add_action( 'after_setup_theme', 'nmota_register_menu' );
-
-
 ?>
