@@ -6,6 +6,9 @@ Description: _s-master child theme for nmota
 Version: 1.0.0
 */
 
+
+/****** HEADER ******/ 
+
 .custom-logo {
     cursor: pointer;
     margin-left: 40%;
@@ -16,8 +19,6 @@ Version: 1.0.0
 }
 
 .site-header {
-    margin-bottom: 3%;
-    margin-top: 3%;
     margin-right: 10%;
     margin-left: 10%;
     align-items: center;
@@ -36,4 +37,22 @@ Version: 1.0.0
     display: inline-block;
     text-decoration: none;
 }
+
+/******* FOOTER ******/
+#menu-footer {
+    padding-top: 15px;
+    text-transform: uppercase;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+a {
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+
 
