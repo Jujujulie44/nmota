@@ -16,6 +16,9 @@ Version: 1.0.0
     font-style: normal;
 }
 
+* {
+    font-family: 'Space Mono', monospace;
+}
 
 /****** HEADER ******/ 
 
