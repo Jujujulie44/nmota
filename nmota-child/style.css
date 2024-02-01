@@ -11,7 +11,7 @@ Version: 1.0.0
 /*** font-family: 'Space Mono', monospace; ***/
 @font-face {
     font-family: 'SpaceMono';
-    src: url('./fonts/SpaceMono-Regular.ttf');
+    src: url('./assets/fonts/SpaceMono-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
