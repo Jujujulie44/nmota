@@ -20,5 +20,7 @@
 
 <?php wp_footer(); ?>
 
+<!-- Appeler ici la modale -->
+
 </body>
 </html>
