@@ -1,26 +1,10 @@
-<?php
-/**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package _s
- */
-
-get_header();
+<?php get_header();?>
+<?php 
+if (have_posts()){
+    while(have_posts()):the_post();
+        the_title();
+        the_content(); 
+    endwhile; 
+}
 ?>
-
-	<main id="primary" class="site-main">
-
-		<?php
-		
-
-
-        
-		?>
-
-	</main><!-- #main -->
-
-<?php
-
-get_footer();
+<?php get_footer();?>

@@ -1,27 +1,20 @@
-
-<?php
-/**
- 
- */
-
-?>
-
+</main>
 	<footer>
 		<div class="div-footer">
 			<?php
-				if( has_nav_menu( 'nmota-footer' ) ) :
+				if( has_nav_menu( 'footer-menu' ) ) :
 					wp_nav_menu( [
-						'menu' => 'nmota-footer'
+						'theme_location' => 'footer-menu'
 					] );
 				endif;
 			?>
 		</div>
 	</footer>
 
-<?php wp_footer(); ?>
-
 <!-- Appeler ici la modale -->
 <?php get_template_part('template-parts/modale/contact') ;?>
+
+<?php wp_footer(); ?>
 
 </body>
 </html>

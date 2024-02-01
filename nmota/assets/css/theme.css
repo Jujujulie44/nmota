@@ -1,6 +1,7 @@
 /*FONTS*/
 
 /*** font-family: 'Space Mono', monospace; ***/
+
 @font-face {
     font-family: 'SpaceMono';
     src: url('./assets/fonts/SpaceMono-Regular.ttf');
@@ -17,18 +18,10 @@
 /****** HEADER ******/ 
 
 .custom-logo {
-    width: 22em;
     cursor: pointer;
-    margin-left: 40%;
-}
-
-.site-title {
-    display: none;
 }
 
 .site-header {
-    margin-right: 10%;
-    margin-left: 10%;
     align-items: center;
     display: flex;
 }
@@ -37,7 +30,7 @@
     justify-content: right;
 }
 
-.main-navigation a {
+.site-menu-class {
     color:black;
     margin-right: 15px;
     padding-left: 40px;
