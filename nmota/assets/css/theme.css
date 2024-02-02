@@ -18,12 +18,15 @@
 /****** HEADER ******/ 
 
 .custom-logo {
+    height: 50%;
+    width: 100%;
+    margin-left: 35%;
     cursor: pointer;
 }
 
 .site-header {
     align-items: center;
-    display: flex;
+    display: flex; 
 }
 
 .main-navigation ul {
@@ -31,11 +34,12 @@
 }
 
 .site-menu-class {
-    color:black;
-    margin-right: 15px;
-    padding-left: 40px;
-    display: inline-block;
-    text-decoration: none;
+    display: flex;
+    list-style: none;
+}
+
+#site-nav-id {
+    margin-left: 35%; 
 }
 
 /******* FOOTER ******/

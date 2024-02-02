@@ -16,7 +16,7 @@
 
 <div class="popup-overlay">
 		<div class="popup-header">
-            <img class="logo" src="<?php echo get_template_directory_uri() . '/assets/img/contact-formulaire.png'; ?> " alt="banniere-contact-formulaire">
+            <img class="img-formulaire" src="<?php echo get_template_directory_uri() . '/assets/img/contact-formulaire.png'; ?> " alt="banniere-contact-formulaire">
 		</div>
 		<p class="popup-informations"></p>
 		<?php
