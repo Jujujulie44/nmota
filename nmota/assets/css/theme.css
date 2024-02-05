@@ -4,12 +4,12 @@
 
 @font-face {
     font-family: 'SpaceMono';
-    src: url('./assets/fonts/SpaceMono-Regular.ttf');
+    src: url('./assets/fonts/spacemono/SpaceMono-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
-/*** GENERAMITES  ***/
+/*** GENERAlITES  ***/
 
 * {
     font-family: 'Space Mono', monospace;
