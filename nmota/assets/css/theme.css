@@ -9,13 +9,16 @@
     font-style: normal;
 }
 
+
 /*** GENERAlITES  ***/
 
 * {
     font-family: 'Space Mono', monospace;
 }
 
-/****** HEADER ******/ 
+/***************/
+/* HEADER / NAV*/
+/***************/
 
 .custom-logo {
     height: 50%;
@@ -42,7 +45,9 @@
     margin-left: 35%; 
 }
 
-/******* FOOTER ******/
+/***************/
+/*    FOOTER   */
+/***************/
 
 #menu-footer {
     padding-top: 18px;
@@ -63,7 +68,12 @@ a:visited {
     color: black; 
 }
 
-/*** ***/ 
+
+/***************/
+/*    BANNER   */
+/***************/
 
 
-
+.has-text-align-center {
+    font-family: 'Poppins', sans-serif;
+}
