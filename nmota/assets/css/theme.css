@@ -65,10 +65,49 @@ a:visited {
 
 
 /***************/
-/*    BANNER   */
+/*    MODALE   */
 /***************/
 
+.hidden{
+    visibility: hidden; 
+    display: none !important;
+}
 
-.has-text-align-center {
-    font-family: 'Poppins', sans-serif;
+.popup-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.popup-contact{
+    position:relative;
+    background:white;
+    max-width:600px;
+    width:80%;
+    padding:15px 0;
+    border: 5px solid #000000;
+}
+
+.popup-close{
+    /* position:absolute; */
+    height:110px;
+    width:100%;
+    cursor:pointer;
+    transition:all 0.4s ease;
+}
+
+.popup-title {
+    background-image: url('../img/contact.png');
+    background-repeat : repeat;
+    overflow : hidden;
+    margin-bottom: 10px;
+    width:100%;
+    height: 49px;
 }
