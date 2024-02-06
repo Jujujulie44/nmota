@@ -13,12 +13,12 @@
 
 	<div class="popup-contact">
 		<div class="popup-title__container">
-            <!--<img class="popup-close" src="<?php echo get_template_directory_uri() . '/assets/img/contact-formulaire.png'; ?> " alt="contact-formulaire">-->
-			<div class="popup-title"></div>
-			<div class="popup-title"></div>
+			<span class="popup-close"></span>
+            <img class="popup-img" src="<?php echo get_template_directory_uri() . '/assets/img/contact-formulaire.png'; ?> " alt="contact-formulaire">
 		</div>
 		<div class="popup-informations"></p>
 			<?php
+
 				// On insère le formulaire de demandes de renseignements
 				// get_field('reference')
 				$refPhoto = "";

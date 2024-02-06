@@ -26,4 +26,23 @@ function nmota_register_menu() {
     add_theme_support('title-tag'); 
   }
   add_action( 'after_setup_theme', 'nmota_register_menu' );
+
+
+
+
+
+/**
+ * Shortcode pour ajouter un bouton contact
+*/
+function contact_btn($string) {
+
+	/** Code du bouton */
+	$string .= '<a href="#" id="contact_btn" class="contact">Contact</a>';
+
+	/** On retourne le code  */
+	return $string;
+}
+
+/** On publie le shortcode  */
+add_shortcode('contact', 'contact_btn');
 ?>
