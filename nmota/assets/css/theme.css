@@ -9,10 +9,6 @@
 
 /*** GENERAlITES  ***/
 
-* {
-    font-family: 'Space Mono', monospace;
-}
-
 /***************/
 /* HEADER / NAV*/
 /***************/
@@ -34,6 +30,7 @@
 }
 
 .site-menu-class {
+    font-family: 'Space Mono', monospace;
     display: flex;
     list-style: none;
 }
@@ -47,6 +44,7 @@
 /***************/
 
 #menu-footer {
+    font-family: 'Space Mono', monospace;
     padding-top: 18px;
     text-transform: uppercase;
     list-style: none;
