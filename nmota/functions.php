@@ -27,4 +27,30 @@ function nmota_register_menu() {
   }
   add_action( 'after_setup_theme', 'nmota_register_menu' );
 
+
+// SHORTCODE
+add_shortcode('banniere-titre', 'banniere_titre_func');
+
+function banniere_titre_func($atts) {
+  $atts = shortcode_atts(array(
+    'src' => '', 
+    'titre' => 'Titre'
+  ), $atts, 'banniere-titre');
+
+  ob_start();
+
+  if($atts['src'] != "") {
+    ?>
+    <div class="banniere-titre" style="background-image: url(<?= $atts['src'] ?>);">
+        <h2 class="titre"><?= $atts['titre'] ?></h2>
+    </div>
+    <?php
+  }
+
+  $output = ob_get_contents();
+  ob_end_clean();
+
+  return $output; 
+}
+
 ?>

@@ -40,6 +40,31 @@
 }
 
 /***************/
+/*   BANNIERE  */
+/***************/
+
+.banniere-titre{
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+/***************/
 /*    FOOTER   */
 /***************/
 
