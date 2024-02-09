@@ -9,7 +9,7 @@
 
 <!-- Ajout de popup dans contact -->
 
-<div class="popup-overlay hidden">
+<div class="popup-overlay">
 
 	<div class="popup-contact">
 		<div class="popup-title__container">

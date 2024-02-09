@@ -1,11 +1,19 @@
 
-	
-const contactButton = document.getElementById("menu-item-59");
+(function($){
 
-if (contactButton) {
-    contactButton.addEventListener("click", (event) => {
-        console.log("click sur le bouton contacter dans la navber");
+	$(".modale-contact").on("click", (event) => {
+		event.preventDefault();
+		$(".popup-overlay").css("display", "flex");
     });
-}
+
+	$(".popup-overlay").on("click", function(event){
+		if (event.target !== this) return; 
+		$(".popup-overlay").css("display", "none");
+	}); 
 
 
+
+	
+
+
+})(jQuery); 

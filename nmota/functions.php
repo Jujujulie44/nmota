@@ -3,11 +3,12 @@
 /// Enqueue styles
 function nmota_enqueue_styles() {
     
-    // Enqueue additional custom stylesheet
+    // Enqueue CSS
     wp_enqueue_style( 'mota', get_stylesheet_directory_uri() . '/assets/css/theme.css', array(), time() );
-
-    // Enqueue custom JavaScript file
+    // Enqueue JS
     wp_enqueue_script( 'mota', get_stylesheet_directory_uri() . '/assets/script/script.js', array( 'jquery' ), time(), true );
+    
+
 }
 add_action( 'wp_enqueue_scripts', 'nmota_enqueue_styles' );
 
@@ -30,30 +31,31 @@ function nmota_register_menu() {
   add_action( 'after_setup_theme', 'nmota_register_menu' );
 
 
-// SHORTCODE BANNIERE // 
 
-add_shortcode('banniere-titre', 'banniere_titre_func');
+  // SHORTCODE BANNIERE // 
 
-function banniere_titre_func($atts) {
-  $atts = shortcode_atts(array(
-    'src' => '', 
-    'titre' => 'Titre'
-  ), $atts, 'banniere-titre');
+  add_shortcode('banniere-titre', 'banniere_titre_func');
 
-  ob_start();
+  function banniere_titre_func($atts) {
+    $atts = shortcode_atts(array(
+      'src' => '', 
+      'titre' => 'Titre'
+    ), $atts, 'banniere-titre');
 
-  if($atts['src'] != "") {
-    ?>
-    <div class="banniere-titre" style="background-image: url(<?= $atts['src'] ?>);">
-        <h2 class="titre"><?= $atts['titre'] ?></h2>
-    </div>
-    <?php
+    ob_start();
+
+    if($atts['src'] != "") {
+      ?>
+      <div class="banniere-titre" style="background-image: url(<?= $atts['src'] ?>);">
+          <h2 class="titre"><?= $atts['titre'] ?></h2>
+      </div>
+      <?php
+    }
+
+    $output = ob_get_contents();
+    ob_end_clean();
+
+    return $output; 
   }
-
-  $output = ob_get_contents();
-  ob_end_clean();
-
-  return $output; 
-}
 
 ?>
