@@ -146,7 +146,7 @@ $nextThumbnailURL = $nextPost ? get_the_post_thumbnail_url($nextPost->ID, 'thumb
   </div>
 
   <button id="toutesLesPhotos" class="bouton">
-    <a href="<?php echo home_url(); ?>#containerPhoto">Toutes les photos</a>
+    <a  class="boutonToutesLesPhotos" href="<?php echo home_url(); ?>#containerPhoto">Toutes les photos</a>
   </button>
 
 </section>
