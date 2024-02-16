@@ -30,18 +30,8 @@ $photoId = get_field('photo');
 $reference = get_field('reference');
 $refUppercase = strtoupper($reference);
 $type = get_field('type');
-//taxonomie
-$annees_terms = get_the_terms(get_the_ID(), 'annee');
-// Vérifie si des termes existent et ne sont pas vides
-if ($annees_terms && !is_wp_error($annees_terms)) {
-  // Assurez-vous de prendre le premier terme, car un article peut être associé à plusieurs termes
-  $annee = $annees_terms[0]->name;
-} else {
-  // Si aucun terme n'est trouvé, vous pouvez définir une valeur par défaut ou afficher un message d'erreur
-  $annee = 'Non défini';
-}
 
-$categories = get_the_terms(get_the_ID(), 'categorie');
+$categories = get_the_terms(get_the_ID(), 'categorie_photo');
 $formats = get_the_terms(get_the_ID(), 'format');
 $FORMATS = $formats ? ucwords($formats[0]->name) : '';
 
@@ -56,46 +46,59 @@ $nextThumbnailURL = $nextPost ? get_the_post_thumbnail_url($nextPost->ID, 'thumb
 <section class="cataloguePhotos">
 	<div class="galleryPhotos">
 		<div class="detailPhoto">
-
-			<div class="containerPhoto">
-        <img src="<?php echo esc_url($photoId); ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
-			</div>
-
 			<div class="photo-info">
-        <div class="photo-info--title">
-				<h2><?php echo get_the_title(); ?></h2>
-        </div>
+                <div class="photo-info--title">
+                        <h2><?php echo get_the_title(); ?></h2>
+                </div>
 				<div class="taxo-details">
-          <p>RÉFÉRENCES: <?php echo esc_html($refUppercase); ?></p>
-          <p>CATÉGORIE: <?php echo esc_html($categories && !is_wp_error($categories) && !empty($categories) ? $categories[0]->name : 'Non défini'); ?></p>
-          <p>FORMAT: <?php echo esc_html($FORMATS); ?></p>
-          <p>TYPE: <?php echo esc_html($type); ?></p>
-          <p>ANNÉE: <?php echo esc_html($annee); ?></p>
-        </div>
+                    <p>RÉFÉRENCES: <?php echo esc_html($refUppercase); ?></p>
+                    <p>CATÉGORIE: <?php echo esc_html($categories[0]->name); ?></p>
+                    <p>FORMAT: <?php echo esc_html($FORMATS); ?></p>
+                    <p>TYPE: <?php echo esc_html($type); ?></p>
+                    <p>ANNÉE: <?php echo get_the_date("Y"); ?></p>
+                </div>
 			</div>
+        </div>
+        <div class="containerPhoto">
+            <img src="<?php echo esc_url($photoId); ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
 		</div>
 	</div>
 
 	<div class="contenairContact">
 		<div class="contact">
 			<p class="interesser"> Cette photo vous intéresse ? </p>
-			<button id="boutonContact" data-reference="<?php echo $REFERENCE; ?>">Contact</button>
+			<button class="modale-contact" id="boutonContact" data-reference="<?php echo $REFERENCE; ?>">Contact</button>
 		</div>
 
 		<div class="naviguationPhotos">
 
 			<!-- Conteneur pour la miniature -->
 			<div class="miniPicture" id="miniPicture">
-				<!-- La miniature sera chargée ici par JavaScript -->
+				<!-- La miniature sera chargée ici par JavaScript // A VOIR -->
 			</div>
 
 			<div class="naviguationArrow">
-				<?php if (!empty($previousPost)) : ?>
-					<img class="arrow arrow-left" src="<?php echo get_theme_file_uri() . '/assets/img/left.png'; ?>" alt="Photo précédente" data-thumbnail-url="<?php echo $previousThumbnailURL; ?>" data-target-url="<?php echo esc_url(get_permalink($previousPost->ID)); ?>">
-				<?php endif; ?>
 
 				<?php if (!empty($nextPost)) : ?>
-					<img class="arrow arrow-right" src="<?php echo get_theme_file_uri() . '/assets/img/right.png'; ?>" alt="Photo suivante" data-thumbnail-url="<?php echo $nextThumbnailURL; ?>" data-target-url="<?php echo esc_url(get_permalink($nextPost->ID)); ?>">
+                    <div>
+                        <?php 
+                        $img_ID = get_post_thumbnail_id($nextPost);
+                        $img_URL = wp_get_attachment_url($img_ID); 
+                        ?>
+                        <a href ="<?php echo get_permalink($nextPost->ID); ?>"><img class="miniature" src="<?php echo $img_URL;?>"></a>
+                    </div>
+					<img class="arrow arrow-left" src="<?php echo get_theme_file_uri() . '/assets/img/left.png'; ?>" alt="Photo précédente" data-thumbnail-url="<?php echo $previousThumbnailURL; ?>" data-target-url="<?php echo esc_url(get_permalink($nextPost->ID)); ?>">
+				<?php endif; ?>
+
+                <?php if (!empty($previousPost)) : ?>
+                    <div>
+                        <?php 
+                        $img_ID = get_post_thumbnail_id($previousPost);
+                        $img_URL = wp_get_attachment_url($img_ID); 
+                        ?>
+                        <a href ="<?php echo get_permalink($previousPost->ID); ?>"><img class="miniature" src="<?php echo $img_URL;?>"></a>
+                    </div>
+                    <img class="arrow arrow-right" src="<?php echo get_theme_file_uri() . '/assets/img/right.png'; ?>" alt="Photo suivante" data-thumbnail-url="<?php echo $nextThumbnailURL; ?>" data-target-url="<?php echo esc_url(get_permalink($previousPost->ID)); ?>">
 				<?php endif; ?>
 			</div>
 
@@ -107,17 +110,18 @@ $nextThumbnailURL = $nextPost ? get_the_post_thumbnail_url($nextPost->ID, 'thumb
   <div class="titleSugest">
     <h2>VOUS AIMEREZ AUSSI</h2>
   </div>
-  <div class="similar_photo">
+  <div class="photo_similaire">
     <?php
-    $categories = get_the_terms(get_the_ID(), 'categorie'); // Récupère les catégories de la photo principale
+    $categories = get_the_terms(get_the_ID(), 'categorie_photo'); // Récupère les catégories de la photo principale
 
     $args = array(
-      'post_type' => 'photo',
+      'post_type' => 'photos',
       'posts_per_page' => 2,
       'post__not_in' => array(get_the_ID()),
+      'orderby'=> 'rand', 
       'tax_query' => array(
         array(
-          'taxonomy' => 'categorie',
+          'taxonomy' => 'categorie_photo',
           'field' => 'id',
           'terms' => $categories ? wp_list_pluck($categories, 'term_id') : array(), // Utilisez les termes de la catégorie principale
         ),

@@ -1,0 +1,53 @@
+  
+/********************* MINIATURES A FAIRE ******************/
+
+
+  /* Conteneur pour les miniatures au survol des flèches de navigation */
+  .miniPicture-content {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  /* Miniatures des photos adjacentes */
+  .miniPicture,
+  .miniPicture-left,
+  .miniPicture-right {
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    height: 71px;
+    width: 81px;
+    top: 8px;
+    transition: visibility 0, 3s, opacity 0.3s linear;
+  }
+
+  .miniPicture a,
+  .miniPicture-left a,
+  .miniPicture-right a {
+    display: block;
+      width: 100%;
+      height: 100%;
+  }
+
+  .miniPicture img,
+  .miniPicture-left img,
+  .miniPicture-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  /* Affichage des miniatures au survol des flèches de navigation */
+  .arrow:hover, 
+  .miniPicture,
+  .arrow:hover, 
+  .miniPicture-left,
+  .arrow:hover,
+  .miniPicture-right {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /*************************************************************/
