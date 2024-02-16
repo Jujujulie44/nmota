@@ -3,11 +3,14 @@
 /// Enqueue styles
 function nmota_enqueue_styles() {
     
-    // Enqueue CSS
+    // Enqueue CSS : 
     wp_enqueue_style( 'mota', get_stylesheet_directory_uri() . '/assets/css/theme.css', array(), time() );
-    // Enqueue JS
+
+
+    // Enqueue JS : 
     wp_enqueue_script( 'mota', get_stylesheet_directory_uri() . '/assets/script/script.js', array( 'jquery' ), time(), true );
-    
+    wp_enqueue_script( 'mota', get_stylesheet_directory_uri() . '/assets/script/miniature.js', array( 'jquery' ), time(), true );
+
 
 }
 add_action( 'wp_enqueue_scripts', 'nmota_enqueue_styles' );
