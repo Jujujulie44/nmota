@@ -476,3 +476,89 @@ span.popup-close{
     font-size: 14px;
     text-align: center;
   }
+
+
+
+  /************ BLOC PHOTO / VOus aimerez aussi : ***************/ 
+  
+  .blockPhotoRelative {
+    flex-shrink: 0;
+    position: relative;
+    width: 564px;
+    height: 495px;
+    margin-bottom: 50px;
+  }
+
+  .blockPhotoRelative img {
+    width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .overlay:hover .eye-icon,
+  .overlay:hover .fullscreen-icon {
+    display: block;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: opacity 0.3s, background-color 0.3s;
+  }
+  
+  .overlay:hover {
+    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .overlay:hover h2,
+  .overlay:hover h3 {
+    display: block;
+  }
+  
+  .overlay h2,
+  .overlay h3 {
+    text-transform: uppercase;
+    position: absolute;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    display: none;
+  }
+  
+  .overlay h2 {
+    left: 10px;
+    top: 440px;
+  }
+  
+  .overlay h3 {
+    left: 476px;
+    top: 452px;
+  }
+  
+  .overlay .eye-icon {
+    width: 46px;
+    height: 31.2px;
+    top: 231.4px;
+    left: 255px;
+    position: absolute;
+    display: none;
+  }
+  
+  .overlay .fullscreen-icon {
+    position: absolute;
+    cursor: pointer;
+    z-index: 3;
+    width: 34px;
+    height: 34px;
+    top: 11px;
+    left: 512px;
+    border: 1px;
+    display: none;
+  }
