@@ -9,7 +9,7 @@ function nmota_enqueue_styles() {
 
     // Enqueue JS : 
     wp_enqueue_script( 'mota', get_stylesheet_directory_uri() . '/assets/script/script.js', array( 'jquery' ), time(), true );
-    wp_enqueue_script( 'mota', get_stylesheet_directory_uri() . '/assets/script/miniature.js', array( 'jquery' ), time(), true );
+    //wp_enqueue_script( 'mota', get_stylesheet_directory_uri() . '/assets/script/miniature.js', array( 'jquery' ), time(), true );
 
 
 }

@@ -37,7 +37,7 @@
 
 
 
-	  /* REcupérer la ref de la photo dans la modale  */
+	  /* REcupérer la ref de la photo dans la modale // NE FONCTIONNE PAS  */
   
 	  // Gestion du clic sur le bouton modale-contact
 	  $(".modale-contact").click(function () {

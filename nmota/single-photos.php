@@ -67,7 +67,7 @@ $nextThumbnailURL = $nextPost ? get_the_post_thumbnail_url($nextPost->ID, 'thumb
 	<div class="contenairContact">
 		<div class="contact">
 			<p class="interesser"> Cette photo vous intéresse ? </p>
-			<button class="modale-contact" id="boutonContact" data-reference="<?php echo $refUppercase; ?>">Contact</button>
+			<button class="modale-contact" id="boutonContact" data-reference="<?php echo $REFERENCE; ?>">Contact</button>
 		</div>
 
 		<div class="naviguationPhotos">
