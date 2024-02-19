@@ -10,4 +10,6 @@ if (have_posts()){
 
 ?>
 
+<?php get_template_part( 'single-photo' );?>
+
 <?php get_footer();?>
