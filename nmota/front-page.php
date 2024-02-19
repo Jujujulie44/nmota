@@ -1,13 +1,5 @@
 <?php get_header();?>
-<h1>Accueil</h1>
-<p>page d'accueil Nathalie Mota</p>
-
-
-
-
-
-
-
+<?php get_template_part('template-parts/banner'); ?>
 
 
 <?php get_footer();?>

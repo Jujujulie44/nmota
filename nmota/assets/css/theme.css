@@ -19,9 +19,9 @@ body {
     padding: 0;
 }
 
-/***************/
-/* HEADER / NAV*/
-/***************/
+/***************************************************************/
+/* HEADER / NAV************************************************/
+/***************************************************************/
 
 
 .custom-logo {
@@ -62,9 +62,9 @@ body {
 }
 
 
-/***************/
-/*    FOOTER   */
-/***************/
+/****************************************************************/
+/*    FOOTER   ************************************************/
+/***************************************************************/
 
 #menu-footer {
     font-family: 'Space Mono', monospace;
@@ -88,9 +88,9 @@ body {
 }
 */
 
-/***************/
-/*    MODALE   */
-/***************/
+/***************************************************************/
+/*    MODALE   *************************************************/
+/***************************************************************/
 
 
 .popup-overlay {
@@ -138,9 +138,9 @@ span.popup-close{
     margin: auto;
 }
 
-/***************/
-/*  FORMULAIRE */
-/***************/
+/***************************************************************/
+/*  FORMULAIRE *************************************************/
+/***************************************************************/
 
 .wpcf7-form {
     display: flex;
@@ -184,8 +184,8 @@ span.popup-close{
 }
 
 /***********************************************************/
-/* BTN FORMULAIRE */
-/******************/
+/* BTN FORMULAIRE *************************************************/
+/******************************************************************/
 
 .wpcf7-form p .wpcf7-submit { 
     cursor: pointer;
@@ -224,9 +224,9 @@ span.popup-close{
 /******************************************************/
 
 
-/******************/
-/*  SINGLE-PHOTOS */
-/******************/
+/******************************************************************/
+/*  SINGLE-PHOTOS *************************************************/
+/******************************************************************/
   
   /* Conteneur principal pour la galerie de photos */
   .galleryPhotos {
@@ -342,7 +342,7 @@ span.popup-close{
   }
 
 
-  /*********************************/
+  /*********************************************************************************/
 
   .miniature {
     width: 81px; 
@@ -579,3 +579,53 @@ span.popup-close{
     border: 1px;
     display: none;
   }
+
+
+
+/******************************************************************/
+/*  BANNER/ HERO  *************************************************/
+/******************************************************************/
+  
+.banner {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+
+  .banner img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    position: absolute;
+    top: 3px;
+    @include keyFrames(200px, AnimationToUp, 100%);
+  }
+
+
+
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 85%;
+    height: 10%;
+    font-family: "space_monobold_italic", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 6vw;
+    line-height: 10vh;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 3px #ffffff;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+    @include keyFrames(-200px, AnimationToDown, 100%);
+  
+  }
+  
