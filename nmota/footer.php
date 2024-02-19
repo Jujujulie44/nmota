@@ -12,7 +12,7 @@
 	</footer>
 
 <!-- Appeler ici la modale -->
-<?php get_template_part('template-parts/modale/contact') ;?>
+<?php get_template_part('template-parts/contact') ;?>
 
 <?php wp_footer(); ?>
 

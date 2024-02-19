@@ -129,7 +129,7 @@ $nextThumbnailURL = $nextPost ? get_the_post_thumbnail_url($nextPost->ID, 'thumb
           $photoId = get_field('photo');
           $reference = get_field('reference');
           $refUppercase = strtoupper($reference);
-          get_template_part('template-parts/bloc-photo/bloc-photo');
+          get_template_part('template-parts/bloc-photo');
     ?>
     <!-- Conteneur pour chaque photo similaire -->
     <div class="similar_photo__container">
