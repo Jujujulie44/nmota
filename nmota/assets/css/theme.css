@@ -603,7 +603,6 @@ span.popup-close{
     object-fit: cover;
     position: absolute;
     top: 3px;
-    @include keyFrames(200px, AnimationToUp, 100%);
   }
 
 
@@ -624,8 +623,6 @@ span.popup-close{
     color: transparent;
     -webkit-text-stroke: 3px #ffffff;
     -webkit-text-fill-color: transparent;
-    z-index: 1;
-    @include keyFrames(-200px, AnimationToDown, 100%);
-  
+    z-index: 1; 
   }
   
