@@ -39,12 +39,24 @@
 
 	  /* REcupérer la ref de la photo dans la modale // NE FONCTIONNE PAS  */
   
+/* TEST1
 	  // Gestion du clic sur le bouton modale-contact
 	  $(".modale-contact").click(function () {
-		var reference = $(this).data("reference");
+		const reference = $(this).data("reference");
 		console.log("Référence de la photo : " + reference);
 		// Vous pouvez maintenant utiliser la référence comme vous le souhaitez
 	  });
+
+*/
+
+	  document.addEventListener("DOMContentLoaded", function() {
+		// Gestion du clic sur le bouton modale-contact
+		$(".modale-contact").click(function () {
+			const reference = $(this).data("reference");
+			console.log("Référence de la photo : " + reference);
+			// Vous pouvez maintenant utiliser la référence comme vous le souhaitez
+		});
+	});
 
 
 	
