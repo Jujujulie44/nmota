@@ -5,7 +5,7 @@
         $photo_args = array(
             'post_type'      => 'photos',
             'posts_per_page' => 1,
-            'orderby'        => 'rand', // Tri aléatoire
+            'orderby'        => 'rand',
         );
 
         // Requête WordPress avec les arguments définis
