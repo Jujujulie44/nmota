@@ -491,7 +491,6 @@ span.popup-close{
   .photoNotFound {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    text-align: center;
   }
 
 
@@ -603,6 +602,8 @@ span.popup-close{
     object-fit: cover;
     position: absolute;
     top: 3px;
+    animation: mooveUpImage 2s 300ms both;
+    
   }
 
 
@@ -624,5 +625,135 @@ span.popup-close{
     -webkit-text-stroke: 3px #ffffff;
     -webkit-text-fill-color: transparent;
     z-index: 1; 
+    animation: mooveDown 2s 300ms both;
+  }
+
+  /***** KEYFRAMES BANNER + TITRE ****/ 
+
+@keyframes mooveDown {
+    0% {
+      transform: translateY(-300px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      visibility: visible;
+  }
+  }
+  
+  @keyframes mooveUpImage {
+    0% {
+      transform: translateY(600px) ;
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+
+/******************************************************************/
+/*  FILTRES FRONT-PAGE ********************************************/
+/******************************************************************/
+
+
+
+  /* Styles généraux pour tous les selects */
+.custom-select {
+    width: 260px;
+    height: 50px;
+    border: 1.3px solid #b8bbc2;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: transparent;
+    margin-bottom: 10px; /* Ajout d'espace entre les selects */
+  }
+  
+  /* Style pour le conteneur de chaque paire label/select */
+  .taxonomy-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styles pour le conteneur #filtrePhoto */
+  #filtrePhoto {
+    padding-top: 50px;
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+  
+  /* Styles pour la section gauche contenant 'Catégorie' et 'Format' */
+  .left-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+  }
+  
+  /* Styles pour la section droite contenant 'Trier par' */
+  .right-section {
+    align-items: flex-end; /* Aligne le texte à droite dans la section droite */
+  }
+  
+  /* Styles spécifiques pour le sélecteur 'Trier par' */
+  #annees {
+    margin-left: auto; /* Déplace 'Trier par' à droite */
+  }
+
+
+
+/******************************************************************/
+/*  PHOTOS FRONT-PAGE  ********************************************/
+/******************************************************************/
+
+
+
+  /* Styles du bloc de catalogue */
+.blocCatalogue {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    margin-top: 43px;
+    gap: 10px;
+  }
+  
+  /* Styles de l'image principale dans le bloc */
+  #blockPusdImage {
+    width: 100%;
+  }
+  
+  /* Styles du bouton "Plus d'image" */
+  #plusDImage {
+    display: block;
+    position: relative;
+    width: 25%;
+    height: 55px;
+    line-height: 100%;
+    background: transparent;
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 2px;
+    border-left: 4px solid #000000; 
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+   
+  }
+
+  /* Styles au survol du bouton */
+  #plusDImage:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: .36s cubic-bezier(0.4, 0.0, 1, 1);
   }
   
