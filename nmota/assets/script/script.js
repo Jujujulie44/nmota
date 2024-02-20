@@ -97,7 +97,6 @@
 
 	/********* Lightbox fullscreen   ******/
 
-	console.log("Lightbox Ouverture et Fermeture : son js est chargé");
 
 	// Fonction principale exécutée lorsque le DOM est prêt
 	$(function () {
