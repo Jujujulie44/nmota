@@ -18,7 +18,7 @@
 
 
 
-	/* Click des fleche single-photo */
+	/* Click des fleche  / miniatures single-photo */
 
 	$(".arrow-left").click(function () {
 		var targetUrl = $(this).data("target-url");
@@ -38,7 +38,7 @@
 
 
 
-	/* REcupérer la ref de la photo dans la modale */
+	/* REcupérer la ref de la photo Du BTN contact vers la modale */
 
 
 	$(function () {
@@ -168,6 +168,7 @@
 		updateLightbox(currentIndex);
 	});
 	});
+
 
 
 })(jQuery); 

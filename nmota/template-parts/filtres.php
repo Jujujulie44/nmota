@@ -38,14 +38,11 @@ echo "<div class='right-section'>";
 $terms_annees = get_terms('annee');
 if ($terms_annees && !is_wp_error($terms_annees)) {
     $select_class_annees = 'custom-select annees-select';
-
     echo "<div class='taxonomy-container'>";
     echo "<select id='annees' class='$select_class_annees'>";
-
     echo "<option value=''>$taxonomy[annees]</option>";
-    foreach ($terms_annees as $term_annees) {
-        echo "<option value='$term_annees->slug'>$term_annees->name</option>";
-    }
+    echo "<option value='date_asc'>A partir des plus récentes</option>";
+    echo "<option value='date_desc'>A partir des plus anciennes</option>";
     echo "</select>";
     echo "</div>";
 }
