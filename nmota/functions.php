@@ -9,7 +9,13 @@ function nmota_enqueue_styles() {
 
     // Enqueue JS : 
     wp_enqueue_script( 'mota', get_stylesheet_directory_uri() . '/assets/script/script.js', array( 'jquery' ), time(), true );
-    //wp_enqueue_script( 'mota', get_stylesheet_directory_uri() . '/assets/script/miniature.js', array( 'jquery' ), time(), true );
+    //wp_enqueue_script( 'mota', get_stylesheet_directory_uri() . '/assets/script/modale-contact.js', array( 'jquery' ), time(), true );
+    //wp_enqueue_script( 'mota', get_stylesheet_directory_uri() . '/assets/script/miniatures.js', array( 'jquery' ), time(), true );
+    //wp_enqueue_script( 'mota', get_stylesheet_directory_uri() . '/assets/script/filtres.js', array( 'jquery' ), time(), true );
+    //wp_enqueue_script( 'mota', get_stylesheet_directory_uri() . '/assets/script/lightbox.js', array( 'jquery' ), time(), true );
+
+    /* Bouton plus d'image front-page géré avec AJAX  */
+    //wp_enqueue_script( 'mota', get_stylesheet_directory_uri() . '/assets/script/load-more-photos.js', array( 'jquery' ), time(), true );
 
 
 }
