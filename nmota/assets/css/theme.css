@@ -1,35 +1,33 @@
 /*FONTS*/
 
 @font-face {
-  font-family: 'Poppins', sans-serif;
-  src: url("../fonts/poppins/Poppins-Regular.ttf") format("ttf"),
-    url("../fonts/poppins/Poppins-Regular.ttf") format("ttf");
+  font-family: 'Poppins';
+  src: url("../fonts/poppins/Poppins-Regular.ttf");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 
 @font-face {
-  font-family: 'Space Mono', monospace;
-  src: url("../fonts/spacemono/spacemono-Regular.ttf") format("ttf"),
-    url("../fonts/spacemono/spacemono-Regular.ttf") format("ttf");
+  font-family: 'SpaceMono';
+  src: url("../fonts/spacemono/SpaceMono-Regular.ttf");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
-
-
-/*** font-family: 'Space Mono', monospace; ***/
-/*** font-family: 'Poppins', sans-serif; ***/
+@font-face {
+  font-family: "SpaceMonoBoldItalic";
+  src: url("../fonts/spacemono/SpaceMono-BoldItalic.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 /*** GENERAlITES  ***/
 
 *{
     box-sizing: border-box;
-    font-family: 'Space Mono', monospace;
+    font-family: 'SpaceMono';
 }
 
 body {
@@ -64,7 +62,7 @@ body {
 }
 
 .site-menu-class {
-    font-family: 'Space Mono', monospace;
+  font-family: 'SpaceMono'; 
     display: flex;
     list-style: none;
 }
@@ -85,7 +83,7 @@ body {
 /***************************************************************/
 
 #menu-footer {
-    font-family: 'Space Mono', monospace;
+    font-family: 'SpaceMono';
     padding-top: 18px;
     text-transform: uppercase;
     list-style: none;
@@ -167,7 +165,7 @@ span.popup-close{
 }
 
 .wpcf7-form p label {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
@@ -176,10 +174,6 @@ span.popup-close{
 .wpcf7-form p input {
     height: 35px;
 }
-
-/*.wpcf7-form p textarea {
-    padding: 10px;
-}*/
 
 .wpcf7-form p .wpcf7-text,
 .wpcf7-form p .wpcf7-email,
@@ -339,7 +333,7 @@ span.popup-close{
     line-height: 100%;
     background: transparent;
     /*background-color: #d8d8d8;*/
-    font-family: 'Space Mono', monospace;
+    font-family: 'SpaceMono';
     font-weight: 400;
     font-size: 14px;
     border-radius: 2px;
@@ -470,7 +464,7 @@ span.popup-close{
     text-decoration: none;
     color: #000000;
     font-size: 14px;
-    font-family: 'Space Mono', monospace;
+    font-family: 'SpaceMono';
   }
 
   #toutesLesPhotos:hover {
@@ -496,13 +490,13 @@ span.popup-close{
   
   /* Style pour le message "Cette photo vous intéresse ?" */
   .interesser {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     font-size: 14px;
   }
   
   /* Style pour le message "Pas de photo similaire trouvée" */
   .photoNotFound {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     font-size: 14px;
   }
 
@@ -556,7 +550,7 @@ span.popup-close{
     text-transform: uppercase;
     position: absolute;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     font-size: 14px;
     display: none;
   }
@@ -628,7 +622,7 @@ span.popup-close{
     position: absolute;
     width: 85%;
     height: 10%;
-    font-family: "space_monobold_italic", sans-serif;
+    font-family: "SpaceMonoBoldItalic";
     font-style: italic;
     font-weight: 700;
     font-size: 6vw;
@@ -752,7 +746,7 @@ span.popup-close{
     height: 55px;
     line-height: 100%;
     background: transparent;
-    font-family: 'Space Mono', monospace;
+    font-family: 'SpaceMono';
     font-weight: 400;
     font-size: 14px;
     border-radius: 2px;
@@ -807,7 +801,7 @@ span.popup-close{
 
 .lightbox .lightboxPrevious,
 .lightbox .lightboxNext {
-    font-family: 'Space Mono', monospace;
+    font-family: 'SpaceMono';
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -845,7 +839,7 @@ span.popup-close{
 }
 
 .lightboxReference {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     font-size: 18px;
     font-weight: 500;
     line-height: 21px;
@@ -861,7 +855,7 @@ span.popup-close{
 }
 
 .lightboxCategorie {
-    font-family: 'Space Mono', monospace;
+    font-family: 'SpaceMono';
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
