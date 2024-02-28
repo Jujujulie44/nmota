@@ -19,11 +19,14 @@ function nmota_enqueue_styles() {
     wp_enqueue_script( 'modale-contact', get_stylesheet_directory_uri() . '/assets/script/modale-contact.js', array( 'jquery' ), time(), true );
     wp_enqueue_script( 'miniatures', get_stylesheet_directory_uri() . '/assets/script/miniatures.js', array( 'jquery' ), time(), true );
     wp_enqueue_script( 'lightbox', get_stylesheet_directory_uri() . '/assets/script/lightbox.js', array( 'jquery' ), time(), true );
-    // Enqueue filtres.js
-    wp_enqueue_script('filtre-script', get_stylesheet_directory_uri() . '/assets/script/filtres.js', array('jquery'), '1.0.0', true);
+
+    // Enqueue burger-menu
+    wp_enqueue_script('menu-burger', get_stylesheet_directory_uri() . '/assets/script/menu-burger.js', array('jquery'), '1.0.0', true);
+    // Enqueue filtres
+    wp_enqueue_script('filtreS', get_stylesheet_directory_uri() . '/assets/script/filtres.js', array('jquery'), '1.0.0', true);
 
 
-    //Enqueue custom-select.js
+    //Enqueue custom-select
     wp_enqueue_script('custom-select-script', get_stylesheet_directory_uri() . '/assets/script/custom-select.js', array('jquery'), '1.0.0', true);
 
 }

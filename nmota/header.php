@@ -23,24 +23,34 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-				the_custom_logo();
-			 ?>
-		</div><!-- .site-branding -->
+	<header id="masthead" class="site-header header_container">
 
-		
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'header-menu',
-					'container' => 'nav',
-					'container_id' => 'site-nav-id',
-					'container_class' => 'site-nav-class',
-					'menu_class' => 'site-menu-class', 
-					'menu_id' => 'site_menu_id'			)
-			);
-			?>
+			<div class="site-branding">
+				<?php
+					the_custom_logo();
+				?>
+			</div><!-- .site-branding -->
+			
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'header-menu',
+						'container' => 'nav',
+						'container_id' => 'site-nav-id',
+						'container_class' => 'site-nav-class',
+						'menu_class' => 'site-menu-class', 
+						'menu_id' => 'site_menu_id'			)
+				);
+				?>
+			
+
+			<!-- menu burger -->
+			<div class="burgerMenu">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+
+	
 	</header><!-- #masthead -->
 	<main>
