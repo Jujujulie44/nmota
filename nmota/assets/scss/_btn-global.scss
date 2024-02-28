@@ -14,13 +14,6 @@
     font-weight: 400;
 }
 
-.wpcf7-form p .wpcf7-submit:hover {
-    cursor: pointer;
-    background-color: black;
-    color: white;
-    transition: .36s cubic-bezier(0.4, 0.0, 1, 1);
-}
-
 .wpcf7-response-output {
     width: 160%;
     transform: translate(-20%,0%);
@@ -30,7 +23,6 @@
 .wpcf7-not-valid-tip {
     font-size: 12px;
 }
-
 
 .wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
     text-align: center;
@@ -43,6 +35,7 @@
 /************************************************************/
 /*  BTN CONTACT SINGLE-PHOTO    *****************************/
 /************************************************************/
+
  .contact {
     display: flex;
     align-items: center;
@@ -50,14 +43,12 @@
     width: 50%;
   }
   
-  /* Bouton de contact */
   #boutonContact {
     cursor: pointer;
     width: 40%;
     height: 45px;
     line-height: 100%;
     background: transparent;
-    /*background-color: #d8d8d8;*/
     font-family: 'SpaceMono';
     font-weight: 400;
     font-size: 14px;
@@ -66,50 +57,16 @@
     border-left: 4px solid #000000; 
   }
 
-  #boutonContact:hover{
-    cursor: pointer;
-    background-color: black;
-    color: white;
-    transition: .36s cubic-bezier(0.4, 0.0, 1, 1);
-  }
-
-
 
 
 /************************************************************/
-/*  BTN "TOUTES LES PHOTOS" SINGLE-PHOTOS *******************/
+/*                 LES HOVER              *******************/
 /************************************************************/
-  #toutesLesPhotos {
-    width: 20%;
-    height: 50px;
-    line-height: 100%;
-    border: white;
-    border-left: 4px solid #000000;  
-    background-color: transparent;
-    border-radius: 2px;
-    margin: 0 auto;
-    display: block;
-    position: relative;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-
-  #toutesLesPhotos a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 14px;
-    font-family: 'SpaceMono';
-  }
-
-  #toutesLesPhotos:hover {
-    background-color: black!important ;
-    color: white!important;
-    transition: .36s cubic-bezier(0.4, 0.0, 1, 1);
-  }
-
-  #toutesLesPhotos a:hover{
-    color: white!important;
-  }
-
-
   
+.wpcf7-form p .wpcf7-submit:hover,
+#boutonContact:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white!important;
+  transition: .36s cubic-bezier(0.4, 0.0, 1, 1);
+}

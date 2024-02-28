@@ -133,12 +133,7 @@ $nextThumbnailURL = $nextPost ? get_the_post_thumbnail_url($nextPost->ID, 'thumb
     ?>
     <!-- Conteneur pour chaque photo similaire -->
    
-    
-
   </div>
-  <button id="toutesLesPhotos" class="bouton">
-    <a  class="boutonToutesLesPhotos" href="<?php echo home_url(); ?>#containerPhoto">Toutes les photos</a>
-  </button>
 
 </section>
 

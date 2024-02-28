@@ -192,13 +192,6 @@ span.popup-close {
   font-weight: 400;
 }
 
-.wpcf7-form p .wpcf7-submit:hover {
-  cursor: pointer;
-  background-color: black;
-  color: white;
-  transition: 0.36s cubic-bezier(0.4, 0, 1, 1);
-}
-
 .wpcf7-response-output {
   width: 160%;
   transform: translate(-20%, 0%);
@@ -225,14 +218,12 @@ span.popup-close {
   width: 50%;
 }
 
-/* Bouton de contact */
 #boutonContact {
   cursor: pointer;
   width: 40%;
   height: 45px;
   line-height: 100%;
   background: transparent;
-  /*background-color: #d8d8d8;*/
   font-family: "SpaceMono";
   font-weight: 400;
   font-size: 14px;
@@ -241,46 +232,15 @@ span.popup-close {
   border-left: 4px solid #000000;
 }
 
+/************************************************************/
+/*                 LES HOVER              *******************/
+/************************************************************/
+.wpcf7-form p .wpcf7-submit:hover,
 #boutonContact:hover {
   cursor: pointer;
   background-color: black;
-  color: white;
-  transition: 0.36s cubic-bezier(0.4, 0, 1, 1);
-}
-
-/************************************************************/
-/*  BTN "TOUTES LES PHOTOS" SINGLE-PHOTOS *******************/
-/************************************************************/
-#toutesLesPhotos {
-  width: 20%;
-  height: 50px;
-  line-height: 100%;
-  border: white;
-  border-left: 4px solid #000000;
-  background-color: transparent;
-  border-radius: 2px;
-  margin: 0 auto;
-  display: block;
-  position: relative;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-#toutesLesPhotos a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 14px;
-  font-family: "SpaceMono";
-}
-
-#toutesLesPhotos:hover {
-  background-color: black !important;
   color: white !important;
   transition: 0.36s cubic-bezier(0.4, 0, 1, 1);
-}
-
-#toutesLesPhotos a:hover {
-  color: white !important;
 }
 
 /******************************************************************/
