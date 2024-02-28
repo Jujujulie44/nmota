@@ -1,0 +1,70 @@
+
+/******************************************************************/
+/*  BANNER/ HERO  *************************************************/
+/******************************************************************/
+  
+.banner {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+
+  .banner img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    position: absolute;
+    top: 3px;
+    animation: mooveUpImage 2s 300ms both;
+    
+  }
+
+
+
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 85%;
+    height: 10%;
+    font-family: "SpaceMonoBoldItalic";
+    font-style: italic;
+    font-weight: 700;
+    font-size: 6vw;
+    line-height: 10vh;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 3px #ffffff;
+    -webkit-text-fill-color: transparent;
+    z-index: 1; 
+    animation: mooveDown 2s 300ms both;
+  }
+
+  /***** KEYFRAMES BANNER + TITRE ****/ 
+
+@keyframes mooveDown {
+    0% {
+      transform: translateY(-300px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      visibility: visible;
+  }
+  }
+  
+  @keyframes mooveUpImage {
+    0% {
+      transform: translateY(600px) ;
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }

@@ -1,0 +1,51 @@
+
+/******************************************************************/
+/*  PHOTOS FRONT-PAGE  ********************************************/
+/******************************************************************/
+
+
+
+  /* Styles du bloc de catalogue */
+  .blocCatalogue {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    margin-top: 43px;
+    gap: 10px;
+  }
+  
+  /* Styles de l'image principale dans le bloc */
+  #load-moreContainer {
+    width: 100%;
+  }
+  
+  /* Styles du bouton "Plus d'image" */
+  #btnLoad-more {
+    display: block;
+    position: relative;
+    width: 25%;
+    height: 55px;
+    line-height: 100%;
+    background: transparent;
+    font-family: 'SpaceMono';
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 2px;
+    border-left: 4px solid #000000; 
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%; 
+  }
+
+  /* Styles au survol du bouton */
+  #btnLoad-more:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: .36s cubic-bezier(0.4, 0.0, 1, 1);
+  }
+  

@@ -1,0 +1,56 @@
+.miniature {
+    width: 81px; 
+    height: 71px; 
+    object-fit: cover;
+    transition: transform ease .3s;
+  }
+
+  .miniature:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Section de navigation entre les photos */
+  .naviguationPhotos {
+    width: 50%;
+    height: 118px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  /* Flèches de navigation entre les photos */
+  .naviguationArrow {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 25px;
+    width: 32%;
+    margin-bottom: 25px;
+    height: 80%;
+  }
+
+   /* Flèches gauche et droite */
+   .arrow {
+    width: 25px;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+  }
+
+  .arrow:hover{
+    display: flex !important;
+  }
+
+  .arrow-left {
+    right: 27%;
+    top: 10px;
+    position: relative;
+    cursor:pointer; 
+  }
+
+  .arrow-right {
+    right: 27%;
+    top: 10px;
+    position: relative;
+    cursor:pointer; 
+  }

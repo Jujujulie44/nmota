@@ -1,0 +1,52 @@
+/******************************************************************/
+/*  FILTRES FRONT-PAGE ********************************************/
+/******************************************************************/
+
+
+
+.filtre {
+    margin-bottom: 40px;
+  }
+  
+  .custom-select {
+    width: 260px;
+    height: 43px;
+    border: 1.3px solid #b8bbc2 !important;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: transparent;
+  }
+  
+  /* Style pour le conteneur de chaque paire label/select */
+  .taxonomy-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styles pour le conteneur #filtrePhoto */
+  #filtrePhoto {
+    padding-top: 50px;
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+  
+  /* Styles pour la section gauche contenant 'Catégorie' et 'Format' */
+  .left-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Styles pour la section droite contenant 'Trier par' */
+  .right-section {
+    align-items: flex-end;
+  }
+  
+  /* Styles spécifiques pour le sélecteur 'Trier par' */
+  #annees {
+    margin-left: auto;
+  }

@@ -11,8 +11,7 @@ function nmota_enqueue_styles() {
 
     
     // Enqueue CSS : 
-    wp_enqueue_style( 'mota', get_stylesheet_directory_uri() . '/assets/css/theme.css', array(), time() );
-    wp_enqueue_style( 'mota', get_stylesheet_directory_uri() . '/assets/css/nmota.css', array(), time() );
+    wp_enqueue_style( 'NathalieMota', get_stylesheet_directory_uri() . '/assets/css/nmota.css', array(), time() );
 
 
     // Enqueue JS : 

@@ -1,0 +1,233 @@
+
+/******************************************************************/
+/*  SINGLE-PHOTOS *************************************************/
+/******************************************************************/
+  
+  /* Conteneur principal pour la galerie de photos */
+  .galleryPhotos {
+    gap:20px; 
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+  }
+  
+  /* Section détaillée de la photo */
+  .detailPhoto {
+    margin-bottom: 7px;
+    display: flex;
+    flex-basis: 50%;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: solid black 1px;
+  }
+
+  .photo-info{
+    margin:0; 
+  }
+
+  .photo-info--title {
+    font-style: italic;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0em;
+    font-size: 66px;
+    width: 67%;
+    line-height: 80px;
+  }
+
+  .photo-info--title h2 {
+    margin: 0;
+    font-size: 55px;
+    font-weight: 200;
+  }
+
+  .detailPhoto img {
+    width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+  }
+
+  /* Conteneur de la photo principale */
+  .containerPhoto {
+    height: 100%;
+    flex-basis: 50%;
+  }
+
+  .containerPhoto img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+
+  /* Section principale du catalogue de photos */
+.cataloguePhotos {
+    display: flex;
+    flex-direction: column;
+    padding-top: 76px;
+    max-width: 80%;
+    margin: auto;
+  }
+  
+  
+  /* Affichage de l'icône fullscreen au survol de la photo principale */
+  .containerPhoto:hover .fullscreen-iconSingle {
+    display: block;
+  }
+  
+  /* Section du formulaire de contact */
+  .contenairContact {
+    width: 100%;
+    height: 118px;
+    align-items: center;
+    border-bottom: solid black 1px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+
+  /********************* SECTION : PHOTO SIMILAIRES / "Vous aimerez aussi" *****************/
+  
+
+  .photo_similaire {
+    margin: auto;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+  }
+
+
+
+  .photo_similaire img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  
+
+.similar_photo__container{
+    margin: auto;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+
+}
+
+.similar_photo__img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+  
+  /**********************************************************/
+  
+  /* Titre pour la section des photos similaires */
+  .titleSugest {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+  
+  /* Style pour le message "Cette photo vous intéresse ?" */
+  .interesser {
+    font-family: 'Poppins';
+    font-size: 14px;
+  }
+  
+  /* Style pour le message "Pas de photo similaire trouvée" */
+  .photoNotFound {
+    font-family: 'Poppins';
+    font-size: 14px;
+  }
+
+
+
+  /************ BLOC PHOTO / VOus aimerez aussi : ***************/ 
+  
+  .blockPhotoRelative {
+    flex-shrink: 0;
+    position: relative;
+    width: 564px;
+    height: 495px;
+    margin-bottom: 50px;
+  }
+
+  .blockPhotoRelative img {
+    width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .overlay:hover .eye-icon,
+  .overlay:hover .fullscreen-icon {
+    display: block;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: opacity 0.3s, background-color 0.3s;
+  }
+  
+  .overlay:hover {
+    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .overlay:hover h2,
+  .overlay:hover h3 {
+    display: block;
+  }
+  
+  .overlay h2,
+  .overlay h3 {
+    text-transform: uppercase;
+    position: absolute;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 14px;
+    display: none;
+  }
+  
+  .overlay h2 {
+    left: 19px;
+    bottom: 5px;
+  }
+  
+  .overlay h3 {
+    right: 19px;
+    bottom: 2px;
+  }
+  
+  .overlay .eye-icon {
+    width: 46px;
+    height: 31.2px;
+    top: 231.4px;
+    left: 255px;
+    position: absolute;
+    display: none;
+  }
+  
+  .overlay .fullscreen-icon {
+    position: absolute;
+    cursor: pointer;
+    z-index: 3;
+    width: 34px;
+    height: 34px;
+    top: 11px;
+    left: 512px;
+    border: 1px;
+    display: none;
+  }
+
