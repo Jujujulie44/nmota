@@ -1,0 +1,41 @@
+/***************************************************************/
+/* HEADER / NAV************************************************/
+/***************************************************************/
+
+
+.custom-logo {
+    height: 50%;
+    width: 100%;
+    margin-left: 70%;
+    cursor: pointer;
+}
+
+.site-header {
+    align-items: center;
+    display: flex;
+}
+
+.single-photos .site-header {
+    box-shadow: 0px 11px 12px -7px #aaaa;
+}
+
+
+.main-navigation ul {
+    justify-content: right;
+}
+
+.site-menu-class {
+  font-family: 'SpaceMono'; 
+    display: flex;
+    list-style: none;
+}
+
+.site-menu-class a {
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+#site-nav-id {
+    margin-left: 48%; 
+}

@@ -35,74 +35,9 @@ body {
     padding: 0;
 }
 
-/***************************************************************/
-/* HEADER / NAV************************************************/
-/***************************************************************/
 
 
-.custom-logo {
-    height: 50%;
-    width: 100%;
-    margin-left: 70%;
-    cursor: pointer;
-}
 
-.site-header {
-    align-items: center;
-    display: flex;
-}
-
-.single-photos .site-header {
-    box-shadow: 0px 11px 12px -7px #aaaa;
-}
-
-
-.main-navigation ul {
-    justify-content: right;
-}
-
-.site-menu-class {
-  font-family: 'SpaceMono'; 
-    display: flex;
-    list-style: none;
-}
-
-.site-menu-class a {
-    padding: 30px;
-    text-decoration: none;
-    color: black;
-}
-
-#site-nav-id {
-    margin-left: 48%; 
-}
-
-
-/****************************************************************/
-/*    FOOTER   ************************************************/
-/***************************************************************/
-
-#menu-footer {
-    font-family: 'SpaceMono';
-    padding-top: 18px;
-    text-transform: uppercase;
-    list-style: none;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-#menu-footer a {
-    padding: 30px;
-    text-decoration: none;
-    color: black;
-}
-/*
-#menu-footer a:active{
-    color: black;
-    font-weight: bold;
-}
-*/
 
 /***************************************************************/
 /*    MODALE   *************************************************/
@@ -734,12 +669,12 @@ span.popup-close{
   }
   
   /* Styles de l'image principale dans le bloc */
-  #blockPusdImage {
+  #load-moreContainer {
     width: 100%;
   }
   
   /* Styles du bouton "Plus d'image" */
-  #plusDImage {
+  #btnLoad-more {
     display: block;
     position: relative;
     width: 25%;
@@ -756,12 +691,11 @@ span.popup-close{
     border-right: none;
     margin: 0 auto;
     margin-top: 5%;
-    margin-bottom: 5%;
-   
+    margin-bottom: 5%; 
   }
 
   /* Styles au survol du bouton */
-  #plusDImage:hover {
+  #btnLoad-more:hover {
     cursor: pointer;
     background-color: black;
     color: white;

@@ -1,0 +1,66 @@
+/***************************************************************/
+/* HEADER / NAV************************************************/
+/***************************************************************/
+.custom-logo {
+  height: 50%;
+  width: 100%;
+  margin-left: 70%;
+  cursor: pointer;
+}
+
+.site-header {
+  align-items: center;
+  display: flex;
+}
+
+.single-photos .site-header {
+  box-shadow: 0px 11px 12px -7px rgba(170, 170, 170, 0.6666666667);
+}
+
+.main-navigation ul {
+  justify-content: right;
+}
+
+.site-menu-class {
+  font-family: "SpaceMono";
+  display: flex;
+  list-style: none;
+}
+
+.site-menu-class a {
+  padding: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+#site-nav-id {
+  margin-left: 48%;
+}
+
+/****************************************************************/
+/*    FOOTER   ************************************************/
+/***************************************************************/
+#menu-footer {
+  font-family: "SpaceMono";
+  padding-top: 18px;
+  text-transform: uppercase;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#menu-footer a {
+  padding: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+/*
+#menu-footer a:active{
+    color: black;
+    font-weight: bold;
+}
+*/
+
+/*# sourceMappingURL=nmota.css.map */

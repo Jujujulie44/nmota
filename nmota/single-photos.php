@@ -51,7 +51,7 @@ $nextThumbnailURL = $nextPost ? get_the_post_thumbnail_url($nextPost->ID, 'thumb
           <h2><?php echo get_the_title(); ?></h2>
         </div>
 				<div class="taxo-details">
-          <p>RÉFÉRENCES: <?php echo esc_html($refUppercase); ?></p>
+          <p>RÉFÉRENCES: <span id="single-ref"><?php echo esc_html($refUppercase); ?></span></p>
           <p>CATÉGORIE: <?php echo esc_html($categories[0]->name); ?></p>
           <p>FORMAT: <?php echo esc_html($FORMATS); ?></p>
           <p>TYPE: <?php echo esc_html($type); ?></p>
@@ -126,24 +126,15 @@ $nextThumbnailURL = $nextPost ? get_the_post_thumbnail_url($nextPost->ID, 'thumb
       $query = new WP_Query($args);
       if ($query->have_posts()) :
         while ($query->have_posts()) : $query->the_post();
-          $photoId = get_field('photo');
-          $reference = get_field('reference');
-          $refUppercase = strtoupper($reference);
           get_template_part('template-parts/bloc-photo');
+
+      endwhile; 
+    endif; 
     ?>
     <!-- Conteneur pour chaque photo similaire -->
-    <div class="similar_photo__container">
-      <!-- Image de la photo similaire -->
-      <img class="similar_photo__img" src="<?php echo esc_url($photoId); ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
-    </div>
-    <?php
-        endwhile;
-      else :
-        // Afficher un message si aucune photo similaire n'est trouvée avec la classe photoNotFound
-        echo '<p class="photoNotFound">Pas de photo similaire trouvée pour la catégorie.</p>';
-      endif;
-      wp_reset_postdata();
-    ?>
+   
+    
+
   </div>
   <button id="toutesLesPhotos" class="bouton">
     <a  class="boutonToutesLesPhotos" href="<?php echo home_url(); ?>#containerPhoto">Toutes les photos</a>

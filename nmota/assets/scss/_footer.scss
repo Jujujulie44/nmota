@@ -1,0 +1,27 @@
+
+
+/****************************************************************/
+/*    FOOTER   ************************************************/
+/***************************************************************/
+
+#menu-footer {
+    font-family: 'SpaceMono';
+    padding-top: 18px;
+    text-transform: uppercase;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#menu-footer a {
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+}
+/*
+#menu-footer a:active{
+    color: black;
+    font-weight: bold;
+}
+*/

@@ -1,8 +1,8 @@
 <?php
 $args = array(
     'post_type'      => 'photos',
-    'posts_per_page' => 12,
-    'orderby'        => 'date',
+    'posts_per_page' => 6,
+    'orderby'        => 'rand',
     'order'          => 'ASC',
 );
 $photo_block = new WP_Query($args);
@@ -27,6 +27,6 @@ endif;
 ?>
 
 <!-- Bloc pour le chargement de plus de photos -->
-<div id="blockPusdImage">
-    <button id="plusDImage" data-page="1" data-url="">Charger plus</button>
+<div id="load-moreContainer">
+    <button id="btnLoad-more" data-page="1" data-url="">Charger plus</button>
 </div>
