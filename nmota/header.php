@@ -23,7 +23,7 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 
-	<header id="masthead" class="site-header header_container">
+	<header id="masthead" class="site-header">
 
 			<div class="site-branding">
 				<?php
@@ -42,12 +42,16 @@
 						'menu_id' => 'site_menu_id'			)
 				);
 				?>
-
-				<!-- menu burger -->
-				<div class="burgerBtn">
-                	<span></span>
-            	</div>
+				
 			
 
+			<!-- menu burger -->
+			<div class="burgerMenu">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+
+	
 	</header><!-- #masthead -->
 	<main>
