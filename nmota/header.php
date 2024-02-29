@@ -42,15 +42,12 @@
 						'menu_id' => 'site_menu_id'			)
 				);
 				?>
+
+				<!-- menu burger -->
+				<div class="burgerBtn">
+                	<span></span>
+            	</div>
 			
 
-			<!-- menu burger -->
-			<div class="burgerMenu">
-				<span class="bar"></span>
-				<span class="bar"></span>
-				<span class="bar"></span>
-			</div>
-
-	
 	</header><!-- #masthead -->
 	<main>
