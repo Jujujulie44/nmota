@@ -21,7 +21,7 @@ esc_html() échappe les caractères spéciaux en HTML.
 esc_url() échappe les caractères spéciaux dans une URL.
 -->
 
-<?php get_header();;?>
+<?php get_header() ;?>
 
 
 <?php

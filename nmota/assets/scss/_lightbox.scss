@@ -25,6 +25,11 @@
     font-size: 23px;
     cursor: pointer;
     color: #fff;
+
+    @media screen and (max-width: 768px) {
+        top:6%;
+        right: 13%;
+    }
 }
 
 .lightbox .lightboxPrevious,
@@ -44,10 +49,21 @@
 
 .lightbox .lightboxPrevious {
     left: 12%;
+
+    @media screen and (max-width: 768px) {
+        width: 96px;
+        z-index: 999;
+        left: 0%;
+    }
 }
 
 .lightbox .lightboxNext {
     right: 15%;
+
+    @media screen and (max-width: 768px) {
+        width: 90px;
+        right: 0%;
+    }
 }
 
 .lightboxImage {
@@ -57,7 +73,14 @@
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
+
+    @media screen and (max-width: 768px) {
+        width: 60%;
+        right: 0%;
+    }
+
 }
+
 
 .lightbox .lightbox-caption {
     color: #fff;
@@ -80,6 +103,11 @@
     color: #fff;
     width: 170px;
     height: 21px;
+
+    @media screen and (max-width: 768px) {
+        bottom: 12%;
+        left: 76%;
+    }
 }
 
 .lightboxCategorie {
@@ -94,7 +122,13 @@
     bottom: 110px;
     right: 439px;
     color: #fff;
+
+    @media screen and (max-width: 768px) {
+        bottom: 12%;
+        right: 74%;
+    }
 }
+
 
 .lightboxPhoto {
     position: absolute;

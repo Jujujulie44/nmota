@@ -12,13 +12,28 @@
     align-items: center;
     justify-content: center;
     display: flex;
+
+    @media screen and (max-width: 770px) {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0 0 0;
+    }
 }
 
 #menu-footer a {
     padding: 30px;
     text-decoration: none;
     color: black;
+
 }
+
+#menu-footer li {
+    
+    @media screen and (max-width: 770px) {
+        padding-bottom: 13px;
+     }
+}
+
 
 #menu-footer a:active{
     color: black;

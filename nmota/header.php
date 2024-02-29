@@ -19,39 +19,37 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body class="mainContainer">
 <?php wp_body_open(); ?>
-<div id="page" class="site">
 
-	<header id="masthead" class="site-header">
+	<header class="site-header">
+		<nav id="site-navigation" class="siteNavigation" role="navigation">
+			<div class="siteNavigation__logo">
+				<a href="<?php echo home_url('/'); ?>">
+					<img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/logo.png'; ?>" alt="Logo">
+				</a>
+			</div>
 
-			<div class="site-branding">
-				<?php
-					the_custom_logo();
-				?>
-			</div><!-- .site-branding -->
-			
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'header-menu',
-						'container' => 'nav',
-						'container_id' => 'site-nav-id',
-						'container_class' => 'site-nav-class',
-						'menu_class' => 'site-menu-class', 
-						'menu_id' => 'site_menu_id'			)
-				);
-				?>
-				
-			
-
-			<!-- menu burger -->
+			<!-- Menu burger -->
 			<div class="burgerMenu">
 				<span class="bar"></span>
 				<span class="bar"></span>
 				<span class="bar"></span>
 			</div>
-
+								
+			<div class="siteNavigation__menu">
 	
+			<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'header-menu',
+						'menu_class'     => 'navMenu',		
+						)
+				);
+			?>
+			</div>	
+		</nav>
+
 	</header><!-- #masthead -->
 	<main>
+	

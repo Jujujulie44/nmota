@@ -21,6 +21,10 @@
     position: absolute;
     top: 3px;
     animation: mooveUpImage 2s 300ms both;
+
+    @media screen and (max-width: 768px) {
+      
+    }
     
   }
 
