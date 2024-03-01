@@ -21,7 +21,16 @@ jQuery(document).ready(function ($) {
         },
         success: function (response) {
           // Mettez à jour la section des photos avec les résultats filtrés
-          $("#containerPhoto").html(response);
+          $("#containerPhoto").html("");
+          $("#containerPhoto").append(response);
+          attachEventsToImages();
+            if (category.length || format.length || years.length ){
+                $("#btnLoad-more").hide();
+            }
+            else {
+                $("#btnLoad-more").show();
+            }
+         
         },
         error: function (xhr, ajaxOptions, thrownError) {
           console.log(xhr.status);

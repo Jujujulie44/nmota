@@ -840,7 +840,7 @@ span.popup-close {
   top: 3px;
   animation: mooveUpImage 2s 300ms both;
 }
-h1 {
+.hero-title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1002,6 +1002,7 @@ h1 {
   .lightbox .lightboxClose {
     top: 6%;
     right: 13%;
+    z-index: 999;
   }
 }
 
@@ -1199,6 +1200,31 @@ h1 {
   .select2-container--default .select2-selection--single {
     width: 100% !important;
     margin-bottom: 5px;
+  }
+}
+h1 {
+  margin-top: 10%;
+  text-align: center;
+  animation: mooveDown 2s 300ms both;
+}
+
+.apropos-title {
+  margin-top: 3%;
+  text-align: center;
+}
+
+.apropos__paragraphe {
+  text-align: center;
+}
+
+@keyframes mooveDown {
+  0% {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    visibility: visible;
   }
 }
 

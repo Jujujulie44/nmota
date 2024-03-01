@@ -1,5 +1,5 @@
 <div class="banner">
-    <h1>Photographe event</h1>
+    <h1 class="hero-title">Photographe event</h1>
     <?php
         // Arrgument de la requête pour récupérer une photo random
         $photo_args = array(
