@@ -3,9 +3,11 @@
 }
 
 .mentionslegales__title{
-    text-align: center;
+    text-align: left;
     font-family: "SpaceMonoBoldItalic";
-    font-style: italic;
+    text-transform: uppercase;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 h1 {
@@ -20,7 +22,7 @@ h1 {
 }
 
 .mentionslegales__paragraphe{
-    text-align: center;
-    margin-left: 20px;
-    margin-right: 20px;
+    text-align: left;
+    margin-left: 80px;
+    margin-right: 80px;
 }
