@@ -1,6 +1,6 @@
 # nmota
 
-<img src="/assets/img/Banner-Nathalie-Mota.png" alt="Logo">
+<img src="./assets/img/Banner-Nathalie-Mota.png" alt="Logo">
 
 Projet 11 - Créez un site WordPress complexe pour une photographe freelance (du parcours "Développeur WordPress" avec OpenClassrooms)
 
@@ -36,4 +36,4 @@ Déroulement du projet
 27 - Mise en place d'url dynamique pour les requettes Ajax<br>
 28 - Ajout de contrôles pour les requettes ajax et éviter les injections SQL<br>
 
-<img src="/assets/img/mobileDesktop.png" alt="Version mobile et desktop">
+<img src="./assets/img/mobileDesktop.png" alt="Version mobile et desktop">
