@@ -26,8 +26,8 @@
 		<nav id="site-navigation" class="siteNavigation" role="navigation">
 			<div class="siteNavigation__logo">
 				<a href="<?php echo home_url('/'); ?>">
-					<img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/logo.png'; ?>" alt="Logo">
-				</a>
+					
+				</a><img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/logo.png'; ?>" alt="Logo">
 			</div>
 
 			<!-- Menu burger -->

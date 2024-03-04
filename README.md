@@ -1,6 +1,6 @@
 # nmota
 
-<img src="./assets/img/Banner-Nathalie-Mota.png" alt="Logo">
+<img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/Banner-Nathalie-Mota.png ; ?>" alt="Logo">
 
 Projet 11 - Créez un site WordPress complexe pour une photographe freelance (du parcours "Développeur WordPress" avec OpenClassrooms)
 
