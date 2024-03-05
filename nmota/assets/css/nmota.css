@@ -22,6 +22,7 @@ header .siteNavigation {
 header .siteNavigation__logo {
   width: 215px !important;
   height: 15px !important;
+  cursor: pointer;
 }
 header .siteNavigation__menu {
   display: flex;
@@ -170,6 +171,7 @@ header .siteNavigation__menu .navMenu li a:hover {
   align-items: center;
   justify-content: center;
   display: flex;
+  border-top: 1px solid black;
 }
 @media screen and (max-width: 770px) {
   #menu-footer {
@@ -189,11 +191,6 @@ header .siteNavigation__menu .navMenu li a:hover {
   #menu-footer li {
     padding-bottom: 13px;
   }
-}
-
-#menu-footer a:active {
-  color: black;
-  font-weight: bold;
 }
 
 /***************************************************************/
@@ -327,7 +324,6 @@ span.popup-close {
   cursor: pointer;
   border: white;
   background: #D3D3D3;
-  border-left: 4px solid #000000;
   height: 45px;
   width: 100%;
   font-size: 14px;
@@ -376,9 +372,8 @@ span.popup-close {
   font-family: "SpaceMono";
   font-weight: 400;
   font-size: 14px;
-  border-radius: 2px;
+  border-radius: 3px;
   border: none;
-  border-left: 4px solid #000000;
 }
 @media screen and (max-width: 768px) {
   #boutonContact {
@@ -414,11 +409,11 @@ span.popup-close {
   font-family: "SpaceMono";
   font-weight: 400;
   font-size: 14px;
-  border-radius: 2px;
-  border-left: 4px solid #000000;
+  border-radius: 3px;
   border-top: none;
   border-bottom: none;
   border-right: none;
+  border-left: none;
   margin: 0 auto;
   margin-top: 5%;
   margin-bottom: 5%;

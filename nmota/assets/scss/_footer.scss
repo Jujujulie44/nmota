@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     display: flex;
+    border-top: 1px solid black;
 
     @media screen and (max-width: 770px) {
         display: flex;
@@ -24,7 +25,6 @@
     padding: 30px;
     text-decoration: none;
     color: black;
-
 }
 
 #menu-footer li {
@@ -35,8 +35,4 @@
 }
 
 
-#menu-footer a:active{
-    color: black;
-    font-weight: bold;
-}
 
