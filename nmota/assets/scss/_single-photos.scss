@@ -80,7 +80,7 @@
   .containerPhoto {
     height: 100%;
     flex-basis: calc(50% - 10px); /* Utilisation de calc() pour soustraire la marge entre les éléments */
-    margin-right: 20px; 
+    
   
     @media screen and (max-width: 768px) {
       flex-basis: 100%; /* Sur les écrans plus petits, occuper 100% de la largeur */
@@ -103,7 +103,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 35px;
-  max-width: 80%;
+  max-width: 100vh;
   margin: auto;
 
     @media screen and (max-width: 768px){
@@ -187,6 +187,7 @@
     width: 80%;
     margin: 0 auto;
     margin-bottom: 5%;
+    margin-left : 22%;
 
     @media screen and (max-width: 768px) {
       text-align: center;
