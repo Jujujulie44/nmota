@@ -8,7 +8,7 @@ header {
   align-items: center;
   padding-inline: 145px;
   background: white;
-  height: 80px;
+  height: 60px;
   box-shadow: 0px 4px 14px 10px rgba(0, 0, 0, 0.03);
 }
 header .siteNavigation {
@@ -225,7 +225,7 @@ header .siteNavigation__menu .navMenu li a:hover {
 body {
   margin: 0;
   padding: 0;
-  max-width: 1440px;
+  /*max-width: 1440px;*/
 }
 
 /***************************************************************/
@@ -515,7 +515,7 @@ span.popup-close {
 /* Conteneur de la photo principale */
 .containerPhoto {
   height: 100%;
-  flex-basis: calc(50% - 10px); /* Utilisation de calc() pour soustraire la marge entre les éléments */
+  flex-basis: calc(44% - 13px); /* Utilisation de calc() pour soustraire la marge entre les éléments */
 }
 @media screen and (max-width: 768px) {
   .containerPhoto {
@@ -526,7 +526,7 @@ span.popup-close {
 
 .containerPhoto img {
   max-width: 100%;
-  height: auto; /* Pour conserver les proportions de l'image */
+  margin-left: 12%;
 }
 @media screen and (max-width: 768px) {
   .containerPhoto img {
@@ -538,8 +538,8 @@ span.popup-close {
 .cataloguePhotos {
   display: flex;
   flex-direction: column;
-  padding-top: 35px;
-  max-width: 117vh;
+  padding-top: 22px;
+  max-width: 139vh;
   margin: auto;
 }
 @media screen and (max-width: 768px) {
@@ -610,8 +610,7 @@ span.popup-close {
 .titleSugest {
   width: 80%;
   margin: 0 auto;
-  margin-bottom: 5%;
-  margin-left: 17%;
+  margin-bottom: 1%;
 }
 @media screen and (max-width: 768px) {
   .titleSugest {
@@ -783,10 +782,10 @@ span.popup-close {
   display: flex;
   align-items: flex-end;
   margin-bottom: 25px;
-  width: 32%;
+  width: 30%;
   margin-bottom: 25px;
   height: 80%;
-  margin-right: 15px;
+  margin-right: -1;
 }
 
 /* Flèches gauche et droite */
