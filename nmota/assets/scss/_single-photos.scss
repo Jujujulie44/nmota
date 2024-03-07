@@ -80,14 +80,8 @@
   /* Conteneur de la photo principale */
   .containerPhoto {
     height: 100%;
-<<<<<<< HEAD
     flex-basis: calc(44% - 13px); /* Utilisation de calc() pour soustraire la marge entre les éléments */
     
-=======
-    flex-basis: calc(50% - 10px); /* Utilisation de calc() pour soustraire la marge entre les éléments */
-    
-  
->>>>>>> 826839cb6e6ecff4f2be06c5337bf86899fde393
     @media screen and (max-width: 768px) {
       flex-basis: 100%; /* Sur les écrans plus petits, occuper 100% de la largeur */
       margin-right: 0; /* Supprimer la marge pour occuper toute la largeur */
@@ -108,13 +102,9 @@
 .cataloguePhotos {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   padding-top: 22px;
   max-width: 139vh;
-=======
-  padding-top: 35px;
-  max-width: 100vh;
->>>>>>> 826839cb6e6ecff4f2be06c5337bf86899fde393
+  padding-top: 15px;
   margin: auto;
 
     @media screen and (max-width: 768px){
@@ -197,14 +187,8 @@
   .titleSugest {
     width: 80%;
     margin: 0 auto;
-<<<<<<< HEAD
     margin-bottom: 1%;
     
-=======
-    margin-bottom: 5%;
-    margin-left : 22%;
->>>>>>> 826839cb6e6ecff4f2be06c5337bf86899fde393
-
     @media screen and (max-width: 768px) {
       text-align: center;
       align-items: center;
