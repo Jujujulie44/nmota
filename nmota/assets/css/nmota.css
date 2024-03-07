@@ -94,7 +94,7 @@ header .siteNavigation__menu .navMenu li a:hover {
     flex-direction: column;
     position: absolute;
     z-index: 999;
-    top: 50px;
+    top: 40px;
     left: -16px;
     right: 0;
     background-color: #E00000;
@@ -530,6 +530,7 @@ span.popup-close {
 @media screen and (max-width: 768px) {
   .containerPhoto img {
     width: 100%; /* Sur les écrans plus petits, occuper 100% de la largeur */
+    margin-left: 0;
   }
 }
 
@@ -567,6 +568,7 @@ span.popup-close {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 23px;
   }
 }
 
