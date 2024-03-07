@@ -1,8 +1,8 @@
 .miniature {
-    width: 81px; 
-    height: 71px; 
-    object-fit: cover;
-    transition: transform ease .3s;
+  width: 71px;
+  height: 60px;
+  object-fit: cover;
+  transition: transform ease 0.3s;
 
   }
 
@@ -13,7 +13,7 @@
   /* Section de navigation entre les photos */
   .naviguationPhotos {
     width: 50%;
-    height: 118px;
+    height: 90px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -30,6 +30,7 @@
     width: 32%;
     margin-bottom: 25px;
     height: 80%;
+    margin-right: 15px;
 
    
   }

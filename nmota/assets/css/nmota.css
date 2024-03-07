@@ -516,7 +516,6 @@ span.popup-close {
 .containerPhoto {
   height: 100%;
   flex-basis: calc(50% - 10px); /* Utilisation de calc() pour soustraire la marge entre les éléments */
-  margin-right: 20px;
 }
 @media screen and (max-width: 768px) {
   .containerPhoto {
@@ -540,7 +539,7 @@ span.popup-close {
   display: flex;
   flex-direction: column;
   padding-top: 35px;
-  max-width: 80%;
+  max-width: 117vh;
   margin: auto;
 }
 @media screen and (max-width: 768px) {
@@ -557,9 +556,9 @@ span.popup-close {
 /* Section du formulaire de contact */
 .contenairContact {
   width: 100%;
-  height: 118px;
+  height: 95px;
   align-items: center;
-  border-bottom: solid black 1px;
+  border-bottom: solid #000 1px;
   display: flex;
   justify-content: center;
 }
@@ -612,6 +611,7 @@ span.popup-close {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 5%;
+  margin-left: 17%;
 }
 @media screen and (max-width: 768px) {
   .titleSugest {
@@ -754,8 +754,8 @@ span.popup-close {
 }
 
 .miniature {
-  width: 81px;
-  height: 71px;
+  width: 71px;
+  height: 60px;
   object-fit: cover;
   transition: transform ease 0.3s;
 }
@@ -767,7 +767,7 @@ span.popup-close {
 /* Section de navigation entre les photos */
 .naviguationPhotos {
   width: 50%;
-  height: 118px;
+  height: 90px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -786,6 +786,7 @@ span.popup-close {
   width: 32%;
   margin-bottom: 25px;
   height: 80%;
+  margin-right: 15px;
 }
 
 /* Flèches gauche et droite */
